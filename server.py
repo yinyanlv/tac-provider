@@ -13,6 +13,7 @@ app_port = conf.get('app', 'port')
 is_debug = True if APP_MODE == 'dev' or APP_MODE == None else False
 
 app = Flask(app_name)
+app.config['JSON_AS_ASCII'] = False
 
 @app.route('/')
 def home():
