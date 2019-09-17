@@ -17,7 +17,7 @@ app.config['JSON_AS_ASCII'] = False
 
 @app.route('/')
 def home():
-    return 'welcome to tac-provider!'
+    return 'welcome to {}!'.format(app_name)
 
 
 @app.route('/get-series')
